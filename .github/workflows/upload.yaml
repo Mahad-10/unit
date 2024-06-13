@@ -21,3 +21,6 @@ jobs:
         uses: snapcore/action-build@v1
         with:
           snapcraft-channel: 7.x/stable
+
+      - name: get snap path
+        run: realpath unit_*.snap
