@@ -1,0 +1,19 @@
+name: Publish Snap
+
+on:
+  push:
+    branches:
+      - main  # Change this to your default branch
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout git repository
+        uses: actions/checkout@v4
+
