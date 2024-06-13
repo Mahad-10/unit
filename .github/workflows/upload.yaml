@@ -17,3 +17,7 @@ jobs:
       - name: checkout git repository
         uses: actions/checkout@v4
 
+      - name: Build the snap
+        uses: snapcore/action-build@v1
+        with:
+          snapcraft-channel: 7.x/stable
